@@ -1,5 +1,5 @@
 # iSwift
-Repository about everything I learn about Swift
+TODO: Find more topics
 
 ### RxSwift
-Here I will try to explain everything that I'll learn about RxSwift
+TODO: Take me to topic
