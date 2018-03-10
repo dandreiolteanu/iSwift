@@ -18,6 +18,10 @@ class RandomEmojiViewController: UIViewController {
     var titleLbl: UILabel!
     var emojiIndex = 0
     var flowDelegate: RandomEmojiFlowDelegate?
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
