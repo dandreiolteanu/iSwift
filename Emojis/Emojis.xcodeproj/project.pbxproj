@@ -15,14 +15,14 @@
 		5F6CC2DA205290B500EF2941 /* HelloFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6CC2D9205290B500EF2941 /* HelloFlowController.swift */; };
 		5F6CC2DD2052914000EF2941 /* HelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6CC2DC2052914000EF2941 /* HelloViewController.swift */; };
 		5F6CC2E02052953000EF2941 /* HomeFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6CC2DF2052953000EF2941 /* HomeFlowController.swift */; };
-		5F6CC2E420529AB400EF2941 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6CC2E320529AB400EF2941 /* HomeTabBarController.swift */; };
-		5F6CC2E62052A04D00EF2941 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6CC2E52052A04D00EF2941 /* CustomNavigationController.swift */; };
 		5F6CC2E92052A3F800EF2941 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6CC2E82052A3F800EF2941 /* WelcomeViewController.swift */; };
 		5FE81CBA205336D1002BA25B /* RandomEmojiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE81CB9205336D1002BA25B /* RandomEmojiViewController.swift */; };
 		5FE81CBC205338FB002BA25B /* RandomEmojiFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE81CBB205338FB002BA25B /* RandomEmojiFlowController.swift */; };
 		5FE81CBE20534451002BA25B /* EmojiDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE81CBD20534451002BA25B /* EmojiDetailViewController.swift */; };
 		955B313E2053E1070020F7AA /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955B313D2053E1070020F7AA /* Service.swift */; };
 		955B31402053E2510020F7AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 955B313F2053E2510020F7AA /* Main.storyboard */; };
+		95D7A9CB2053F65300FE4D0E /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D7A9C92053F65300FE4D0E /* HomeTabBarController.swift */; };
+		95D7A9CC2053F65300FE4D0E /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D7A9CA2053F65300FE4D0E /* CustomNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,14 +36,14 @@
 		5F6CC2D9205290B500EF2941 /* HelloFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloFlowController.swift; sourceTree = "<group>"; };
 		5F6CC2DC2052914000EF2941 /* HelloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloViewController.swift; sourceTree = "<group>"; };
 		5F6CC2DF2052953000EF2941 /* HomeFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlowController.swift; sourceTree = "<group>"; };
-		5F6CC2E320529AB400EF2941 /* HomeTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
-		5F6CC2E52052A04D00EF2941 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		5F6CC2E82052A3F800EF2941 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		5FE81CB9205336D1002BA25B /* RandomEmojiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomEmojiViewController.swift; sourceTree = "<group>"; };
 		5FE81CBB205338FB002BA25B /* RandomEmojiFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomEmojiFlowController.swift; sourceTree = "<group>"; };
 		5FE81CBD20534451002BA25B /* EmojiDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiDetailViewController.swift; sourceTree = "<group>"; };
 		955B313D2053E1070020F7AA /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		955B313F2053E2510020F7AA /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		95D7A9C92053F65300FE4D0E /* HomeTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
+		95D7A9CA2053F65300FE4D0E /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,20 +131,10 @@
 			path = Root;
 			sourceTree = "<group>";
 		};
-		5F6CC2DE2052951600EF2941 /* Customs */ = {
-			isa = PBXGroup;
-			children = (
-				5F6CC2E320529AB400EF2941 /* HomeTabBarController.swift */,
-				5F6CC2E52052A04D00EF2941 /* CustomNavigationController.swift */,
-			);
-			name = Customs;
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		5FE81CB62052CF27002BA25B /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				5F6CC2DE2052951600EF2941 /* Customs */,
+				95D7A9C82053F65300FE4D0E /* Customs */,
 				5F6CC2A82052884A00EF2941 /* BaseViewController.swift */,
 				5F6CC2DC2052914000EF2941 /* HelloViewController.swift */,
 				5F6CC2E82052A3F800EF2941 /* WelcomeViewController.swift */,
@@ -160,6 +150,15 @@
 				955B313D2053E1070020F7AA /* Service.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		95D7A9C82053F65300FE4D0E /* Customs */ = {
+			isa = PBXGroup;
+			children = (
+				95D7A9C92053F65300FE4D0E /* HomeTabBarController.swift */,
+				95D7A9CA2053F65300FE4D0E /* CustomNavigationController.swift */,
+			);
+			path = Customs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,17 +235,17 @@
 			files = (
 				5F6CC2E02052953000EF2941 /* HomeFlowController.swift in Sources */,
 				955B313E2053E1070020F7AA /* Service.swift in Sources */,
+				95D7A9CB2053F65300FE4D0E /* HomeTabBarController.swift in Sources */,
 				5F6CC2E92052A3F800EF2941 /* WelcomeViewController.swift in Sources */,
 				5F6CC2BC2052884A00EF2941 /* AppDelegate.swift in Sources */,
 				5F6CC2CF2052884A00EF2941 /* BaseViewController.swift in Sources */,
 				5FE81CBE20534451002BA25B /* EmojiDetailViewController.swift in Sources */,
 				5FE81CBA205336D1002BA25B /* RandomEmojiViewController.swift in Sources */,
 				5F6CC2DD2052914000EF2941 /* HelloViewController.swift in Sources */,
-				5F6CC2E420529AB400EF2941 /* HomeTabBarController.swift in Sources */,
 				5FE81CBC205338FB002BA25B /* RandomEmojiFlowController.swift in Sources */,
 				5F6CC2D820528F8200EF2941 /* RootFlowController.swift in Sources */,
-				5F6CC2E62052A04D00EF2941 /* CustomNavigationController.swift in Sources */,
 				5F6CC2DA205290B500EF2941 /* HelloFlowController.swift in Sources */,
+				95D7A9CC2053F65300FE4D0E /* CustomNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +364,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 43796DLSS7;
+				DEVELOPMENT_TEAM = 945V6ZBHK3;
 				INFOPLIST_FILE = Emojis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andreix.emojis;
@@ -380,7 +379,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 43796DLSS7;
+				DEVELOPMENT_TEAM = 945V6ZBHK3;
 				INFOPLIST_FILE = Emojis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andreix.emojis;
