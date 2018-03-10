@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5F6CC2622052879A00EF2941 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F6CC2602052879A00EF2941 /* Main.storyboard */; };
 		5F6CC2642052879A00EF2941 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F6CC2632052879A00EF2941 /* Assets.xcassets */; };
-		5F6CC2672052879A00EF2941 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F6CC2652052879A00EF2941 /* LaunchScreen.storyboard */; };
 		5F6CC2BC2052884A00EF2941 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6CC2882052884900EF2941 /* AppDelegate.swift */; };
 		5F6CC2C62052884A00EF2941 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F6CC29A2052884A00EF2941 /* Launch Screen.storyboard */; };
 		5F6CC2CF2052884A00EF2941 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6CC2A82052884A00EF2941 /* BaseViewController.swift */; };
@@ -23,13 +21,13 @@
 		5FE81CBA205336D1002BA25B /* RandomEmojiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE81CB9205336D1002BA25B /* RandomEmojiViewController.swift */; };
 		5FE81CBC205338FB002BA25B /* RandomEmojiFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE81CBB205338FB002BA25B /* RandomEmojiFlowController.swift */; };
 		5FE81CBE20534451002BA25B /* EmojiDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE81CBD20534451002BA25B /* EmojiDetailViewController.swift */; };
+		955B313E2053E1070020F7AA /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955B313D2053E1070020F7AA /* Service.swift */; };
+		955B31402053E2510020F7AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 955B313F2053E2510020F7AA /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5F6CC2592052879A00EF2941 /* Emojis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emojis.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F6CC2612052879A00EF2941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F6CC2632052879A00EF2941 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5F6CC2662052879A00EF2941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F6CC2682052879A00EF2941 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F6CC2882052884900EF2941 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F6CC29A2052884A00EF2941 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -44,6 +42,8 @@
 		5FE81CB9205336D1002BA25B /* RandomEmojiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomEmojiViewController.swift; sourceTree = "<group>"; };
 		5FE81CBB205338FB002BA25B /* RandomEmojiFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomEmojiFlowController.swift; sourceTree = "<group>"; };
 		5FE81CBD20534451002BA25B /* EmojiDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiDetailViewController.swift; sourceTree = "<group>"; };
+		955B313D2053E1070020F7AA /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		955B313F2053E2510020F7AA /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				5F6CC2702052884900EF2941 /* Classes */,
-				5F6CC2602052879A00EF2941 /* Main.storyboard */,
+				955B313F2053E2510020F7AA /* Main.storyboard */,
 				5F6CC2632052879A00EF2941 /* Assets.xcassets */,
-				5F6CC2652052879A00EF2941 /* LaunchScreen.storyboard */,
 				5F6CC2682052879A00EF2941 /* Info.plist */,
 			);
 			path = Emojis;
@@ -88,6 +87,7 @@
 		5F6CC2702052884900EF2941 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				955B313C2053E0F70020F7AA /* Constants */,
 				5F6CC2892052884900EF2941 /* User Interface */,
 				5F6CC2872052884900EF2941 /* Main */,
 			);
@@ -154,6 +154,14 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		955B313C2053E0F70020F7AA /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				955B313D2053E1070020F7AA /* Service.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -213,10 +221,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F6CC2672052879A00EF2941 /* LaunchScreen.storyboard in Resources */,
 				5F6CC2642052879A00EF2941 /* Assets.xcassets in Resources */,
-				5F6CC2622052879A00EF2941 /* Main.storyboard in Resources */,
 				5F6CC2C62052884A00EF2941 /* Launch Screen.storyboard in Resources */,
+				955B31402053E2510020F7AA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F6CC2E02052953000EF2941 /* HomeFlowController.swift in Sources */,
+				955B313E2053E1070020F7AA /* Service.swift in Sources */,
 				5F6CC2E92052A3F800EF2941 /* WelcomeViewController.swift in Sources */,
 				5F6CC2BC2052884A00EF2941 /* AppDelegate.swift in Sources */,
 				5F6CC2CF2052884A00EF2941 /* BaseViewController.swift in Sources */,
@@ -243,25 +251,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		5F6CC2602052879A00EF2941 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5F6CC2612052879A00EF2941 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5F6CC2652052879A00EF2941 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5F6CC2662052879A00EF2941 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5F6CC2692052879A00EF2941 /* Debug */ = {

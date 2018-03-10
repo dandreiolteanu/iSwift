@@ -16,7 +16,6 @@ class RandomEmojiViewController: UIViewController {
     
     var emojiLbl: UILabel!
     var titleLbl: UILabel!
-    var emojis = ["🏀", "🤪", "😈", "🤙", "👨‍💻", "💻"]
     var emojiIndex = 0
     var flowDelegate: RandomEmojiFlowDelegate?
 
@@ -39,7 +38,7 @@ class RandomEmojiViewController: UIViewController {
         emojiLbl.translatesAutoresizingMaskIntoConstraints = false
         emojiLbl.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
         emojiLbl.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 0).isActive = true
-        emojiLbl.text = emojis[0]
+        emojiLbl.text = Service.emojis[0]
         
         // Title label
         titleLbl = UILabel()
@@ -63,18 +62,18 @@ class RandomEmojiViewController: UIViewController {
     func setAndRepeatEmoji() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
             
-            if self.emojiIndex == self.emojis.count - 1 {
+            if self.emojiIndex == Service.emojis.count - 1 {
                 self.emojiIndex = 0
             } else {
                 self.emojiIndex = self.emojiIndex + 1
             }
             
-            self.emojiLbl.text = self.emojis[self.emojiIndex]
+            self.emojiLbl.text = Service.emojis[self.emojiIndex]
             self.setAndRepeatEmoji()
         }
     }
     
-    // function which is triggered when handleTap is called
+    // Function triggered when handleTap is called
     @objc func handleTap(_ sender: UITapGestureRecognizer) {
         print("Hello Tapper")
         flowDelegate?.presentSomeModal(on: self)
