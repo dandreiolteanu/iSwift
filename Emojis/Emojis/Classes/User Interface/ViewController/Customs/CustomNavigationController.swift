@@ -14,8 +14,6 @@ class CustomNavigationController: UINavigationController {
         super.viewDidLoad()
 
         self.navigationBar.barStyle = .black
-        self.navigationBar.prefersLargeTitles = true
         self.navigationBar.tintColor = .white
-
     }
 }

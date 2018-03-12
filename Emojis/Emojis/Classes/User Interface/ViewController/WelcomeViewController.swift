@@ -12,14 +12,13 @@ class WelcomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.navigationController?.navigationBar.prefersLargeTitles = false
-        self.navigationItem.title = "Welcome"
-
+        setupViews()
     }
 
     func setupViews() {
         
-        self.view.backgroundColor = .white
+        self.view.backgroundColor = .black
+        navigationItem.largeTitleDisplayMode = .never
+        navigationItem.title = "Welcome"
     }
 }

@@ -26,6 +26,10 @@ class HelloViewController: UIViewController {
 
     func setupViews() {
         
+        if let navctrl = navigationController as? CustomNavigationController {
+            navctrl.navigationBar.prefersLargeTitles = true
+        }
+        
         self.view.backgroundColor = .black
         self.navigationItem.title = "Home"
         

@@ -21,18 +21,15 @@ class HomeFlowController {
         
         helloFlowController = HelloFlowController()
         helloFlowController.start()
-        let helloRootNavigationController = helloFlowController.rootViewController()
-        let helloTabBarItem = UITabBarItem(title: "Hello", image: UIImage(named: "wave_selected"), tag: 0)
-        helloRootNavigationController.tabBarItem = helloTabBarItem
-        
+
         randomEmojiFlowController = RandomEmojiFlowController()
         randomEmojiFlowController.start()
-        let randomEmojiRootController = randomEmojiFlowController.rootViewController()
+        
+        let helloTabBarItem = UITabBarItem(title: "Hello", image: UIImage(named: "wave_selected"), tag: 0)
+        helloFlowController.rootViewController().tabBarItem = helloTabBarItem
         let randomTabBarItem = UITabBarItem(title: "Random", image: UIImage(named: "random"), tag: 1)
-        randomEmojiRootController.tabBarItem = randomTabBarItem
-        
-        
-        tabBarController.viewControllers = [helloRootNavigationController, randomEmojiRootController]
+        randomEmojiFlowController.rootViewController().tabBarItem = randomTabBarItem
+        tabBarController.viewControllers = [helloFlowController.rootViewController(), randomEmojiFlowController.rootViewController()]
     }
     
     func rootViewController() -> UITabBarController {

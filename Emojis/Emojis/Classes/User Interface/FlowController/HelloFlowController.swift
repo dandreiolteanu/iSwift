@@ -17,8 +17,6 @@ class HelloFlowController {
         helloViewController = HelloViewController()
         helloViewController.flowDelegate = self
         navigationController = CustomNavigationController(rootViewController: helloViewController)
-        navigationController.viewControllers = [helloViewController]
-        navigationController.navigationBar.shadowImage = UIImage()
     }
     
     func rootViewController() -> CustomNavigationController {
