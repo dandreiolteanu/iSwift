@@ -33,7 +33,7 @@ class HelloViewController: UIViewController {
         self.view.backgroundColor = .black
         self.navigationItem.title = "Home"
         
-        self.tabBarItem = UITabBarItem(title: "Wave", image: UIImage(named: "wave_notselected"), tag: 0)
+        self.tabBarItem = UITabBarItem(title: "Hello", image: UIImage(named: "wave_notselected"), tag: 0)
         self.tabBarItem.selectedImage = UIImage(named: "wave_selected")
         
         // Hello Label
@@ -54,7 +54,6 @@ class HelloViewController: UIViewController {
         waveEmojiLbl.font = UIFont.systemFont(ofSize: 80)
         waveEmojiLbl.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
         waveEmojiLbl.topAnchor.constraint(equalTo: helloLbl.bottomAnchor, constant: 30).isActive = true
-        
     }
     
     func setupTapGestures() {

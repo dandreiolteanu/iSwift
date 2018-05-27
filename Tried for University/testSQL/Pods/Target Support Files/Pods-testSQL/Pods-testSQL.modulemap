@@ -1,0 +1,6 @@
+framework module Pods_testSQL {
+  umbrella header "Pods-testSQL-umbrella.h"
+
+  export *
+  module * { export * }
+}

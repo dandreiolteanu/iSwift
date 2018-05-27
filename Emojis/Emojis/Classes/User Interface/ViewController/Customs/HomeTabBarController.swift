@@ -14,8 +14,5 @@ class HomeTabBarController: UITabBarController {
         super.viewDidLoad()
         
         self.tabBar.barStyle = .black
-        
-        
-        
     }
 }

@@ -10,7 +10,9 @@ import UIKit
 
 class EmojiDetailViewController: UIViewController {
     
-    var closeBtn: UIButton!
+    private let closeBtn = UIButton()
+    private let tableView = UITableView()
+    private var bottomAnchor: NSLayoutConstraint!
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -23,9 +25,17 @@ class EmojiDetailViewController: UIViewController {
     
     func setupViews() {
         
-        self.view.backgroundColor = .black
-        
-        closeBtn = UIButton()
+        self.view.backgroundColor = .clear
+
+        tableView.backgroundColor = .white
+        view.addSubview(tableView)
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        bottomAnchor = tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        bottomAnchor.isActive = true
+        tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        tableView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.6)
+
         closeBtn.addTarget(self, action: #selector(didTapCloseBtn(_:)), for: .touchUpInside)
         view.addSubview(closeBtn)
         closeBtn.setTitle("Dismiss", for: .normal)

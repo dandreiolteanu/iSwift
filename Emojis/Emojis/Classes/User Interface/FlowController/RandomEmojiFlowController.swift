@@ -25,6 +25,7 @@ class RandomEmojiFlowController {
 extension RandomEmojiFlowController: RandomEmojiFlowDelegate {
     func presentSomeModal(on viewController: RandomEmojiViewController) {
         let someModal = EmojiDetailViewController()
+        someModal.modalPresentationStyle = .overCurrentContext
         rootViewController().present(someModal, animated: true, completion: nil)
     }
     
