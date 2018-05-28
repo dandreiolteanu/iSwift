@@ -21,10 +21,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        circleRecordingButton = CircleRecordingButton(frame: CGRect(x: 0, y: 0, width: 70, height: 70))
+        circleRecordingButton = CircleRecordingButton(frame: CGRect(x:0, y: 0, width: 70, height: 70))
         circleRecordingButton.delegate = self
-        circleRecordingButton.center = view.center
         circleRecordingButton.center.x = view.center.x
+        circleRecordingButton.center.y = view.frame.size.height - 70 - 70
         view.addSubview(circleRecordingButton)
     }
 }
